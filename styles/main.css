@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body{
+    background-color: rgb(220, 223, 219);
+
+    font-family: 'Poppins';
+}
+
+header{
+    background-color: rgba(66, 66, 66, 0.884);
+    display: flex;
+    place-content: space-between;
+
+}
+.welcome-text{
+    color: rgb(212, 212, 212);
+    margin-left: 1rem;
+}
+nav{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+.navigation-links{
+    border-radius: 45%;
+    border: 2px solid;
+    border-color: rgb(128, 128, 128);
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    margin: 3rem;
+    font-size: 2rem;
+    
+}
+.navigation-cart{
+    color: rgb(128, 128, 128);
+    font-size: 2rem;
+}
+.product-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.product-div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 20rem;
+    max-width: 20rem;
+    margin: 5rem;
+    background-color: rgba(170, 167, 162, 0.603);
+    padding: 1rem;
+    border-radius: 5%;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 10%), 0px 20px 20px rgb(0 0 0 / 10%);
+}
+.product-div h2{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.product-img{ 
+    border-radius: 25%;
+    max-width: 20rem;
+}
+.price{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+
+}
+.add-to-cart{
+    
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 9rem;
+}
+footer{
+    background-color: rgba(66, 66, 66, 0.884);
+    padding: 1.5rem;
+    text-align: center;
+}
+#copyright{
+    color: rgb(229, 255, 0);
+}
+#melander{
+    color: rgb(30, 194, 30);
+}
+
+
+.my-cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart-container{
+    max-width: 80vh;
+    min-height: 80vh;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}/*lägg ut % width på alla div under cart container */
+.cart-headlines{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid grey;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+.cart-headlines h4{
+    margin: 1rem;
+}
+#all-products-in-cart{
+    height: 70vh;
+    border-bottom: 2px solid rgb(36, 27, 27);
+}
+.cart-product{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.image-div{
+    display: flex;
+    flex-direction:row;
+    width: 30%;
+}
+.cart-img{
+    height: 4rem;
+}
+.cart-price p{
+    width:20%
+}
+.cart-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    margin: inherit;
+}
+.cart-quantity button{
+    height: 2rem;
+    margin: 0 1rem 0 1rem;
+}
+.cart-total{
+    width: 10%;
+}
+
+
+.total-sum{
+    text-align: right;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.1rem;
+    padding: 0;
+
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 4rem;
+    min-width: 450px;
+    min-height: 80vh;
+    padding: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    font-size: 2rem;
+}
+
+#customer-validation input{
+    margin-top: 1rem;
+    height: 2.5rem;
+    font-size: 1.8rem;
+}
+#full-name{
+    width: 90%;
+    margin-bottom: 0;
+}
+#name-error-message{
+    color:red;
+    margin-top:0;
+    font-size: 1.3rem;
+}
+#address{
+    width: 90%;
+    margin-bottom: 0;
+}
+#address-error-message{
+    color:red;
+    margin-top:0;
+    font-size: 1.3rem;
+}
+#email{
+    width: 90%;
+    margin-bottom: 0;
+}
+#email-error-message{
+    color:red;
+    margin-top:0;
+    font-size: 1.3rem;
+}
+#phone{
+    width: 90%;
+    margin-bottom: 0;
+}
+#phone-error-message{
+    color:red;
+    margin-top:0;
+    font-size: 1.3rem;
+}
+#send-order{
+    width: 30%;
+    margin-bottom: 0;
+}

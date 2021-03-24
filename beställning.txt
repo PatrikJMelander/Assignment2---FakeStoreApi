@@ -1,0 +1,11 @@
+// Gör en websida som visar några produkter ifrån https://fakestoreapi.com/
+
+// Varje produkt ska ha en Titel, en beskrivning en bild och ett pris.
+// Lägg till en köpknapp under varje produkt
+//Trycker man på knappen kommer man till en beställningssida
+//VG Man ska kunna beställa flera saker
+
+//Beställningsidan ska innehålla info om produkten
+// och ett formulär där man skriver in namn, telefon e-post och leveransaddress
+// validera alla fält med javascript och skicka felmeddelande om alla fält inte är korrekt ifyllda
+// visa en bekräftelse om ordern gått igenom

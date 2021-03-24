@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <div class = "welcome-text">
+            <h1>Welcome</h1>
+        </div>
+        <nav class = "menu">
+            <div class = "navigation-links">
+                <a href="../index.html">Home</a>
+            </div>
+            <div class = "navigation-links">
+                <a href="../html/cart.html">Cart</a>
+            </div>
+            <div class = "navigation-cart">
+                <span></span>
+            </div>      
+        </nav>
+    </header>
+    <section class="my-cart">
+        <div class="cart-container">
+            <div class = "cart-headlines">
+                <h4 id="product-name">Product</h4>
+                <h4 id="product-price">Price</h4>
+                <h4 id="quantity">Quantity</h4>
+                <h4 id="total-product-price">Total Price</h4>
+            </div>
+            <div class="all-products-in-cart">
+                
+            </div>
+            <div class="total-sum">
+                <h3>Total Price</h3>
+                <h3 id="total-price"></h3>
+            </div> 
+        </div>
+        <div class="form-container">
+            <h1>Shipping information</h1>
+            <form id="customer-validation">
+                <div>
+                    <label for="full-name">Full name</label>
+                    <br>
+                   <input type="text" id="full-name">
+                   <p id="name-error-message">Namn får endast innehålla bokstäver</p>
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <br>
+                    <input type="address" id="address"><br>
+                    <p id="address-error-message">Inte korrekt angiven adress</p>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email"><br>
+                    <p id="email-error-message">Mailen ser inte rätt ut, säker på att den stämmer?</p>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="number" id="phone"><br>
+                    <p id="phone-error-message">Du får endast använda siffror</p>
+                </div>
+                <div>
+                    <input id="send-order" type="button" value="Send order">
+                    <p id="send-error-message">Alla fält ej ifyllda korrekt</p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h3><span id="copyright">Copyright &copy; 2021 – </span>Patrik<span id="melander">Melander</span></p></h3>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.all.min.js"></script>
+    <script src="../Javascript/form.js"></script>
+    <script src="../Javascript/cart.js"></script>
+</body>
+</html>
