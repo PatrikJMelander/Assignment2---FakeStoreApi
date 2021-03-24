@@ -2,7 +2,7 @@ const products = [];
 const tempProducts = [];
 
 function getAllProducts() {
-  fetch("http://webacademy.se/fakestore/")
+  fetch("https://webacademy.se/fakestore/")
     .then((res) => res.json())
     .then((data) => data.forEach((e) => tempProducts.push(e)))
     .then(() => productRender())
