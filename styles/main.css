@@ -49,22 +49,25 @@ nav a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 20rem;
-    max-width: 20rem;
+    min-width: 12rem;
+    max-width: 12rem;
     margin: 5rem;
     background-color: rgba(170, 167, 162, 0.603);
     padding: 1rem;
-    border-radius: 5%;
     box-shadow: 0px 10px 10px rgb(0 0 0 / 10%), 0px 20px 20px rgb(0 0 0 / 10%);
 }
 .product-div h2{
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 .product-img{ 
     border-radius: 25%;
-    max-width: 20rem;
+    max-width: 12rem;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 20%), 0px 20px 20px rgb(0 0 0 / 20%);
+}
+.product-description{
+font-size: 0.5rem
 }
 .price{
     font-size: 1.4rem;
@@ -73,9 +76,9 @@ nav a{
 }
 .add-to-cart{
     
-    font-size: 1.4rem;
-    height: 3rem;
-    width: 9rem;
+    font-size: 1rem;
+    height: 1.9rem;
+    width: 6rem;
 }
 footer{
     background-color: rgba(66, 66, 66, 0.884);
@@ -109,20 +112,20 @@ footer{
     margin-bottom: 4rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-}/*lägg ut % width på alla div under cart container */
+}
 .cart-headlines{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     border-bottom: 4px solid grey;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .cart-headlines h4{
-    margin: 1rem;
+    margin: 1.2rem;
 }
-#all-products-in-cart{
-    height: 70vh;
+.all-products-in-cart{
+    min-height: 80vh;
     border-bottom: 2px solid rgb(36, 27, 27);
 }
 .cart-product{
@@ -130,26 +133,29 @@ footer{
     display: flex;
     flex-direction:row;
     margin: 1rem auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-bottom: 1px solid rgb(204, 204, 204);
 }
 .image-div{
     display: flex;
     flex-direction:row;
     width: 30%;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
 }
 .cart-img{
     height: 4rem;
 }
 .cart-price p{
-    width:20%
+    width:10%
 }
 .cart-quantity{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 40%;
-    margin: inherit;
+    margin-block: auto;
+    
 }
 .cart-quantity button{
     height: 2rem;
@@ -157,38 +163,43 @@ footer{
 }
 .cart-total{
     width: 10%;
+    margin-inline: auto;
 }
 
 
 .total-sum{
     text-align: right;
     margin-right: 2rem;
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin-bottom: 0.1rem;
     padding: 0;
 
 }
 
+
+
 .form-container{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 4rem;
     margin-right: 7rem;
     margin-left: 7rem;
     margin-bottom: 4rem;
-    min-width: 450px;
+    min-width: 55vh;
     min-height: 80vh;
-    padding: 45px;
+    padding-left: 2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    font-size: 1rem;
+}
+.form-container h1{
     font-size: 2rem;
 }
 
 #customer-validation input{
-    margin-top: 1rem;
-    height: 2.5rem;
-    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    font-size: 1.2rem;
 }
 #full-name{
     width: 90%;
@@ -197,7 +208,7 @@ footer{
 #name-error-message{
     color:red;
     margin-top:0;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
 }
 #address{
     width: 90%;
@@ -206,7 +217,7 @@ footer{
 #address-error-message{
     color:red;
     margin-top:0;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
 }
 #email{
     width: 90%;
@@ -215,7 +226,7 @@ footer{
 #email-error-message{
     color:red;
     margin-top:0;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
 }
 #phone{
     width: 90%;
@@ -224,7 +235,7 @@ footer{
 #phone-error-message{
     color:red;
     margin-top:0;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
 }
 #send-order{
     width: 30%;
