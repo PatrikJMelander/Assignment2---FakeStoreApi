@@ -37,7 +37,7 @@ $(function () {
   }
 
   function checkAddress() {
-    let validationPattern = /^[a-zA-Z0-9_ ]*$/;
+    let validationPattern = /^[a-zA-Z0-9_ åäö]*$/;
     const address = $("#address").val();
 
     if (validationPattern.test(address) && address !== "") {
