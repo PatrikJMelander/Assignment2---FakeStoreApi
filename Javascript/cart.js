@@ -2,18 +2,15 @@ function renderCart() {
   const getAllProducts = JSON.parse(localStorage.getItem("productList"));
   let allCartProducs = JSON.parse(localStorage.getItem("productsInCart"));
 
-  //console.log(getAllProducts); //for test
-  //console.log(allCartProducs); //for test
+
   if (allCartProducs === null) {
     $("total-price").text("0");
     return;
   }
-  //console.log("före loopen");
 
   let cartProducts = document.querySelector(".all-products-in-cart");
 
   Object.values(allCartProducs).forEach((e) => {
-    //console.log("Inne i loopen");
     cartProducts.innerHTML += `  
     <div class="cart-product" id="${e.id}">
         <div class="image-div">

@@ -26,7 +26,6 @@ function productRender() {
         description: e.description,
         image: e.image,
         cartQuantity: 0,
-
         productName: productName,
       };
       products.push(product);
